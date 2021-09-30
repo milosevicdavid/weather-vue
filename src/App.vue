@@ -87,6 +87,10 @@ Rio();
 </template>
 
 <style>
+body {
+  background-color: lightgray;
+}
+
 .search-wrapper {
   display: flex;
   flex-direction: column;
