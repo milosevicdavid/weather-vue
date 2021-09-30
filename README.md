@@ -1,4 +1,4 @@
-# fastapi-vue
+# Weather Vue
 
 ## Project setup
 ```
