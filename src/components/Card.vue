@@ -14,7 +14,9 @@ const { city } = toRefs(props);
       <div class="hours">
         <div class="hour">
           <div>
-            <span class="hour-string">9h:</span>
+            <span class="hour-string"
+              >{{ city?.list[0].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[0].main.temp) }} °C
           </div>
           <div>
@@ -30,7 +32,9 @@ const { city } = toRefs(props);
 
         <div class="hour">
           <div>
-            <span class="hour-string">12h:</span>
+            <span class="hour-string"
+              >{{ city?.list[1].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[1].main.temp) }} °C
           </div>
           <div>
@@ -45,7 +49,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">15h:</span>
+            <span class="hour-string"
+              >{{ city?.list[2].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[2].main.temp) }} °C
           </div>
           <div>
@@ -60,7 +66,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">18h:</span>
+            <span class="hour-string"
+              >{{ city?.list[3].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[3].main.temp) }} °C
           </div>
           <div>
@@ -75,7 +83,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">21h:</span>
+            <span class="hour-string"
+              >{{ city?.list[4].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[4].main.temp) }} °C
           </div>
           <div>
@@ -90,7 +100,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">00h:</span>
+            <span class="hour-string"
+              >{{ city?.list[5].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[5].main.temp) }} °C
           </div>
           <div>
@@ -111,7 +123,9 @@ const { city } = toRefs(props);
       <div class="hours">
         <div class="hour">
           <div>
-            <span class="hour-string">3h:</span>
+            <span class="hour-string"
+              >{{ city?.list[6].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[6].main.temp) }} °C
           </div>
           <div>
@@ -126,7 +140,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">6h:</span>
+            <span class="hour-string"
+              >{{ city?.list[7].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[7].main.temp) }} °C
           </div>
           <div>
@@ -141,7 +157,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">9h:</span>
+            <span class="hour-string"
+              >{{ city?.list[8].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[8].main.temp) }} °C
           </div>
           <div>
@@ -156,7 +174,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">12h:</span>
+            <span class="hour-string"
+              >{{ city?.list[9].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[9].main.temp) }} °C
           </div>
           <div>
@@ -171,7 +191,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">15h:</span>
+            <span class="hour-string"
+              >{{ city?.list[10].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[10].main.temp) }} °C
           </div>
           <div>
@@ -186,7 +208,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">18h:</span>
+            <span class="hour-string"
+              >{{ city?.list[11].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[11].main.temp) }} °C
           </div>
           <div>
@@ -201,7 +225,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">21h:</span>
+            <span class="hour-string"
+              >{{ city?.list[12].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[12].main.temp) }} °C
           </div>
           <div>
@@ -216,7 +242,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">00h:</span>
+            <span class="hour-string"
+              >{{ city?.list[13].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[13].main.temp) }} °C
           </div>
           <div>
@@ -237,7 +265,9 @@ const { city } = toRefs(props);
       <div class="hours">
         <div class="hour">
           <div>
-            <span class="hour-string">3h:</span>
+            <span class="hour-string"
+              >{{ city?.list[14].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[14].main.temp) }} °C
           </div>
           <div>
@@ -252,7 +282,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">6h:</span>
+            <span class="hour-string"
+              >{{ city?.list[15].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[15].main.temp) }} °C
           </div>
           <div>
@@ -267,7 +299,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">9h:</span>
+            <span class="hour-string"
+              >{{ city?.list[16].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[16].main.temp) }} °C
           </div>
           <div>
@@ -282,7 +316,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">12h:</span>
+            <span class="hour-string"
+              >{{ city?.list[17].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[17].main.temp) }} °C
           </div>
           <div>
@@ -297,7 +333,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">15h:</span>
+            <span class="hour-string"
+              >{{ city?.list[18].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[18].main.temp) }} °C
           </div>
           <div>
@@ -312,7 +350,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">18h:</span>
+            <span class="hour-string"
+              >{{ city?.list[19].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[19].main.temp) }} °C
           </div>
           <div>
@@ -327,7 +367,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">21h:</span>
+            <span class="hour-string"
+              >{{ city?.list[20].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[20].main.temp) }} °C
           </div>
           <div>
@@ -342,7 +384,9 @@ const { city } = toRefs(props);
         </div>
         <div class="hour">
           <div>
-            <span class="hour-string">00h:</span>
+            <span class="hour-string"
+              >{{ city?.list[21].dt_txt.slice(10, -6) }}h:</span
+            >
             {{ parseInt(city?.list[21].main.temp) }} °C
           </div>
           <div>
