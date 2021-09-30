@@ -6,8 +6,15 @@ import SearchCard from "./components/SearchCard.vue";
 const losangeles = ref(null);
 const rio_de_janeiro = ref(null);
 const beijing = ref(null);
-const search = ref();
+const search = ref(null);
 const searchword = ref("");
+
+function refreshData() {
+  LosAngeles();
+  Rio();
+  Beijing();
+  searchCity();
+}
 
 function searchCity() {
   fetch(
@@ -18,26 +25,36 @@ function searchCity() {
     .catch(error => console.log(error));
 }
 
-fetch(
-  `http://api.openweathermap.org/data/2.5/forecast?units=metric&id=5368361&appid=${process.env.VUE_APP_WEATHER_KEY}`
-)
-  .then(la => la.json())
-  .then(la_json => (losangeles.value = la_json))
-  .catch(error => console.log(error));
+function LosAngeles() {
+  fetch(
+    `http://api.openweathermap.org/data/2.5/forecast?units=metric&id=5368361&appid=${process.env.VUE_APP_WEATHER_KEY}`
+  )
+    .then(la => la.json())
+    .then(la_json => (losangeles.value = la_json))
+    .catch(error => console.log(error));
+}
 
-fetch(
-  `http://api.openweathermap.org/data/2.5/forecast?units=metric&id=3451190&appid=${process.env.VUE_APP_WEATHER_KEY}`
-)
-  .then(rio => rio.json())
-  .then(rio_json => (rio_de_janeiro.value = rio_json))
-  .catch(error => console.log(error));
+function Rio() {
+  fetch(
+    `http://api.openweathermap.org/data/2.5/forecast?units=metric&id=3451190&appid=${process.env.VUE_APP_WEATHER_KEY}`
+  )
+    .then(rio => rio.json())
+    .then(rio_json => (rio_de_janeiro.value = rio_json))
+    .catch(error => console.log(error));
+}
 
-fetch(
-  `http://api.openweathermap.org/data/2.5/forecast?units=metric&id=1816670&appid=${process.env.VUE_APP_WEATHER_KEY}`
-)
-  .then(be => be.json())
-  .then(be_json => (beijing.value = be_json))
-  .catch(error => console.log(error));
+function Beijing() {
+  fetch(
+    `http://api.openweathermap.org/data/2.5/forecast?units=metric&id=1816670&appid=${process.env.VUE_APP_WEATHER_KEY}`
+  )
+    .then(be => be.json())
+    .then(be_json => (beijing.value = be_json))
+    .catch(error => console.log(error));
+}
+
+LosAngeles();
+Beijing();
+Rio();
 </script>
 
 <template>
@@ -48,6 +65,7 @@ fetch(
         <form @submit.prevent="searchCity">
           <input type="text" v-model="searchword" />
           <button @click="searchCity">SearchCity</button>
+          <button @click="refreshData">Refresh</button>
         </form>
       </div>
       <div>

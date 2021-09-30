@@ -392,7 +392,7 @@ const { city } = toRefs(props);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   width: 150px;
   height: 500px;
