@@ -37,7 +37,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[1].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
@@ -52,7 +52,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[2].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
@@ -67,7 +67,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[3].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
@@ -82,7 +82,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[4].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
@@ -97,7 +97,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[5].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
@@ -118,7 +118,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[6].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
@@ -133,7 +133,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[7].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
@@ -148,7 +148,7 @@ const { city } = toRefs(props);
             <div>
               <img
                 :src="
-                  `http://openweathermap.org/img/wn/${city?.list[0].weather[0].icon}.png`
+                  `http://openweathermap.org/img/wn/${city?.list[8].weather[0].icon}.png`
                 "
                 alt="weather
       icon"
