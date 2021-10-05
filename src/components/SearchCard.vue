@@ -284,7 +284,7 @@ const { city } = toRefs(props);
           <div class="hour">
             <div>
               <span class="hour-string"
-                >{{ city?.list[15].dt_txt.slice(10, -6) }}hh:</span
+                >{{ city?.list[15].dt_txt.slice(10, -6) }}h:</span
               >
               {{ parseInt(city?.list[15].main.temp) }} °C
             </div>
